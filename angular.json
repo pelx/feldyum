@@ -74,6 +74,13 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+           "options": {
+             "browserTarget": "feldyum:build",
+              "sslKey": "./ssl/server.key",
+              "sslCert": "./ssl/server.crt",
+              "ssl": true
+          },
+
           "configurations": {
             "production": {
               "browserTarget": "feldyum:build:production"
